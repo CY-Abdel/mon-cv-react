@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Knowledges from './pages/Knowledges';
+import Portfolio from './pages/Portfolio';
+import Notfound from './pages/Notfound';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // LES BALISES C'EST DU HTML DANS REACT === JSX.
+    // c'est IMPOSSIBLE D'AVOIR DEUX ELEMENTS FRERES IL FAUT TOUJOURS UN PARENT
+    <>
+      <Router>
+        {/* Routes avant Switch: le principe et des qu'une route est valide tu t'arretes sinon on dernier lieu tu fais not found */}
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/competences" element={<Knowledges />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="*" element={<Notfound />} />
+        </Routes>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;
