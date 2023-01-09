@@ -7,7 +7,7 @@ const Navigation = () => {
         <div className="sidebar">
             <div className="id">
                 <div className="idContent">
-                    <img src="./media/ChougarCV.jpg" alt="photp-profil" style={{ width: "12%" }} />
+                    <img src="./media/ChougarCV.jpg" alt="photp-profil" style={{ width: "10%" }} />
                     <h3>CHOUGAR Abdelhadi</h3>
                 </div>
             </div>
@@ -15,25 +15,33 @@ const Navigation = () => {
             <div className="navigation">
                 <ul>
                     <li>
-                        <NavLink exact to="/" activeClassName="navActive">
+                        <NavLink to="/" className={({ isActive }) =>
+                            isActive ? 'navActive' : undefined
+                        }>
                             <i className="fas fa-home"></i>
                             <span>Accueil</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/competences" activeClassName="navActive">
+                        <NavLink to="/competences" className={({ isActive }) =>
+                            isActive ? 'navActive' : undefined
+                        }>
                             <i className="fas fa-mountain"></i>
                             <span>Compétences</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/portfolio" activeClassName="navActive">
+                        <NavLink to="/portfolio" className={({ isActive }) =>
+                            isActive ? 'navActive' : undefined
+                        }>
                             <i className="fas fa-images"></i>
                             <span>Portfolio</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/contact" activeClassName="navActive">
+                        <NavLink to="/contact" className={({ isActive }) =>
+                            isActive ? 'navActive' : undefined
+                        }>
                             <i className="fas fa-address-book"></i>
                             <span>Contact</span>
                         </NavLink>
@@ -47,7 +55,7 @@ const Navigation = () => {
                         <a href="https://www.linkedin.com/in/chougar-abdelhadi/" target="_blank" rel="noopener noreferrer"><i className='fab fa-linkedin'></i></a>
                     </li>
                     <li>
-                        <a href="https://github.com/ChougarAbdelhadi/cv-react" target="_blank" rel="noopener noreferrer"><i className='fab fa-github'></i></a>
+                        <a href="https://github.com/ChougarAbdelhadi/mon-cv-react" target="_blank" rel="noopener noreferrer"><i className='fab fa-github'></i></a>
                     </li>
                     <li>
                         <a href="https://news-crud-react.netlify.app/" target="_blank" rel="noopener noreferrer"><i className='fab fa-react'></i></a>
@@ -58,7 +66,7 @@ const Navigation = () => {
                 </ul>
 
                 <div className="signature">
-                    <p>Chougar Abdel - 2021</p>
+                    <p>Chougar Abdel - 2023</p>
                 </div>
             </div>
         </div>

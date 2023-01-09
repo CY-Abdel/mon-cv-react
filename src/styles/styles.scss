@@ -1,0 +1,8 @@
+// il va dicter le style de tout notre document
+// donc on va l'appeler dans le plus hait possible de l'application
+// dans index.js
+
+// on doit mettre settings puis navigations par ordre sinon y aura erreur
+// lecture des scss par ordre ici
+@import './settings';
+@import './components/navigation';
