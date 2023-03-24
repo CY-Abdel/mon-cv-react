@@ -7,7 +7,7 @@ const Navigation = () => {
         <div className="sidebar">
             <div className="id">
                 <div className="idContent">
-                    <img src="./media/ChougarCV.jpg" alt="photp-profil" style={{ width: "10%" }} />
+                    <img src="./media/ChougarCV.jpg" alt="photp-profil" />
                     <h3>CHOUGAR Abdelhadi</h3>
                 </div>
             </div>
@@ -60,12 +60,10 @@ const Navigation = () => {
                     <li>
                         <a href="https://news-crud-react.netlify.app/" target="_blank" rel="noopener noreferrer"><i className='fab fa-react'></i></a>
                     </li>
-                    <li>
-                        <a href="https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-miashs-IDIVLQ8C/parcours-double-competence-informatique-et-sciences-sociales-IJLAENY0.html" target="_blank" rel="noopener noreferrer"><i><img src="./media/MIASHS.jpg" alt="UGA-LOGO" style={{ width: "3%" }} /></i></a>
-                    </li>
                 </ul>
 
                 <div className="signature">
+                    {/* <a href="https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-miashs-IDIVLQ8C/parcours-double-competence-informatique-et-sciences-sociales-IJLAENY0.html" target="_blank" rel="noopener noreferrer"><i><img src="./media/MIASHS.jpg" alt="UGA-LOGO" /></i></a> */}
                     <p>Chougar Abdel - 2023</p>
                 </div>
             </div>
