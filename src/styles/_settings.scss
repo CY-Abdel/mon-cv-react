@@ -59,7 +59,7 @@ a:visited {
     // la navbar on 1ere colonne et puis le 2eme components en 2eme colonne
     display: flex;
 
-    // si la width <850 on change flex on block
+    // si la width >85px0 on change flex on block
     @media screen and (max-width: 850px) {
         display: block !important;
     }    
