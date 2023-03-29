@@ -8,7 +8,7 @@ const Notfound = () => {
         <div>
             <div className="notFound">
                 <div className="notFoundContent">
-                    <h3>Désonlé cette page n'existe pas!</h3>
+                    <h3>Désolé cette page n'existe pas!</h3>
                     <h3>sorry this page does not exist!</h3>
 
                     <NavLink exact to="/">

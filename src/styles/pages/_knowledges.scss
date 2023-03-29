@@ -1,0 +1,121 @@
+.knowledges {
+    .knowledgesContent {
+        min-height: $minHeight;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        // la 1ere column prend 38% puis y a une fraction
+        // et une autre fraction
+        grid-template-columns: 38% 1fr 1fr;
+        // on a deux lignes la 1ere a 70% la 2eme 30%
+        grid-template-rows: 70% 30%;
+        grid-template-areas: 
+        // L: langugaes      E: Experience
+        // O: otherSkills    H: Hobbies
+
+            "L E E"
+            "O O H";
+
+        .languagesFrameworks,
+        .experience,
+        .otherSkills,
+        .hobbies {
+            background: $color-2;
+            border-radius: $borderRadius;
+            padding: 0.8rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-family: $font-2;
+            color: $color-5;
+            text-transform: uppercase;
+        }
+        .languagesFrameworks {
+            grid-area: L;
+            margin-bottom: 0.5rem;
+            // on va dire que le compontent L est un grid et on va le fractionner en 2colonnes a son tour
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "L"
+                "F";
+
+            .languagesDisplay {
+                grid-area: L;
+            }
+            .frameworkDisplay {
+                grid-area: F;
+            }
+            h3 {
+                margin-bottom: 0.3rem;
+            }
+            // css des barres d"experience
+            .years {
+                font-size: 0.65rem;
+                display: flex;
+                justify-content: space-between;
+                color: $white;
+
+                span {
+                    //ici c la width de 1er enfant nth-child(1)
+                    width: 40%;
+
+                    &:nth-child(2) {
+                        text-align: right;
+                        width: 10%;
+                    }
+                    &:nth-child(3) {
+                        text-align: right;
+                        width: 50%;
+                    }
+
+                    &:nth-child(2):before,
+                    &:nth-child(3):before {
+                        //c'est important de faire un content quand on fait un after et un before meme vide
+                        content: "";
+                        background: rgba(180, 179, 179, 0.5);
+                        position: absolute;
+                        height: 160px;
+                        width: 1px;
+                        transform: translate(9px, 30px);
+                    }
+                }
+            }
+            .languagesList {
+                padding-top: 0.8rem;
+
+                li {
+                    color: $color-1;
+                }
+                .progressBar {
+                    height: 0.4rem;
+                    background: transparent;
+                    border-radius: 50px;
+                    margin-top: 0.2rem;
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        background: $color-3;
+                        border-radius: 50px;
+                        height: .4rem;
+                        width: 0;
+                        // width a zero pour faire lanimation de 0% a 100%
+                        animation: line 2s ease-out forwards;
+
+                        @keyframes line {
+                            to {
+                                width: 100%;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
