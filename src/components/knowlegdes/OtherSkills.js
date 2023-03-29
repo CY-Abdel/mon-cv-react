@@ -21,7 +21,7 @@ const OtherSkills = () => {
                </li>
                <li>
                   <i className="fas fa-check-square"></i>
-                  MySql, PostgreSql, SQLite
+                  MySql, PostgreSql
                </li>
             </ul>
             <ul>
