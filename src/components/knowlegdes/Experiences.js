@@ -19,7 +19,7 @@ const Experiences = () => {
             <div className="exp3">
                 <h4>projets Js et React</h4>
                 <h4>2021 - 2023</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, possimus?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, hic cupiditate voluptatem, voluptas non labore id, excepturi consequuntur sunt illo eos obcaecati quos quidem facilis.</p>
             </div>
         </div>
     );
