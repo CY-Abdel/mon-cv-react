@@ -43,6 +43,8 @@ class Project extends Component {
                      <div className="infosContent">
                         <div className="head">
                            <h2>{name}</h2>
+                           {/* <h2><a href="https://chougarabdelhadi.github.io/CitationApi/" target="_blank" >{name}</a></h2> */}
+                          
                            <div className="sourceCode">
                               <a href={source} rel='noopener noreferrer' className='button' target="_blank">Code source</a>
                            </div>

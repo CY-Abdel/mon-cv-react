@@ -8,34 +8,34 @@ const OtherSkills = () => {
             <ul>
                <li>
                   <i className="fas fa-check-square"></i>
-                  Français courant
+                  <span>Français courant</span>
                </li>
                <li>
                   <i className="fas fa-check-square"></i>
-                  Anglais bon niveau
+                  <span>Anglais bon niveau</span>
                </li>
 
                <li>
                   <i className="fas fa-check-square"></i>
-                  Git
+                   <span>Git</span>
                </li>
                <li>
                   <i className="fas fa-check-square"></i>
-                  MySql, PostgreSql
+                  <span>MySql, PostgreSql</span> 
                </li>
             </ul>
             <ul>
                <li>
                   <i className="fas fa-check-square"></i>
-                  Github
+                  <span>Github</span> 
                </li>
                <li>
                   <i className="fas fa-check-square"></i>
-                  Architecture MVC
+                  <span> Architecture MVC</span>
                </li>
                <li>
                   <i className="fas fa-check-square"></i>
-                  JAVA
+                   <span>JAVA</span>
                </li>
             </ul>
          </div>

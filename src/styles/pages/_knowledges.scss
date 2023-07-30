@@ -164,10 +164,10 @@
             margin-right: 0.5rem;
 
             .list {
-                display: flex;
-                width: 80%;
+                display: inline-flex;
+                width: 60%;
                 height: 100%;
-                margin: 0 auto;
+                margin: 0 2rem;
                 justify-content: space-between;
 
                 ul {
@@ -176,6 +176,10 @@
 
                     i {
                         color: $color-5;
+                    }
+                    span {
+                        position: absolute;
+                        transform: translateX(0.5rem);
                     }
                 }
             }
