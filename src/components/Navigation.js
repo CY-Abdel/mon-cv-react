@@ -58,7 +58,7 @@ const Navigation = () => {
                         <a href="https://github.com/ChougarAbdelhadi/mon-cv-react" target="_blank" rel="noopener noreferrer"><i className='fab fa-github'></i></a>
                     </li>
                     <li>
-                        <a href="https://news-crud-react.netlify.app/" target="_blank" rel="noopener noreferrer"><i className='fab fa-react'></i></a>
+                        <a href="https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-mathematiques-et-informatique-appliquees-aux-sciences-humaines-et-sociales-miashs-IDIVLQ8C/parcours-double-competence-informatique-et-sciences-sociales-IJLAENY0.html" target="_blank" rel="noopener noreferrer"><i className='fas fa-user-graduate'></i></a>
                     </li>
                 </ul>
 

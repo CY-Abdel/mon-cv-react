@@ -76,7 +76,7 @@ export const portfolioData = [
     name: 'Blog Laravel',
     languages: ['php'],
     languagesIcons: ['fab fa-php', 'fab fa-laravel'],
-    source: 'https://github.com/ChougarAbdelhadi/Portfolio/settings/pages',
+    source: 'https://github.com/ChougarAbdelhadi/BlogLaravel',
     info: "Front-end : HTML5, CSS et Bootstrap. Back-End 'Framework Laravel(PHP)' : routing, Authentifaction, implémenter un CRUD, mapping Base de données et templates, validations de formulaire ... Base de données / Outil : MySQL et Git.",
     picture: './media/page_garde.JPG'
   },
@@ -85,7 +85,7 @@ export const portfolioData = [
     name: 'Agence immo Sf',
     languages: ['php'],
     languagesIcons: ['fab fa-php', 'fab fa-symfony fa-lg'],
-    source: 'https://github.com/ChougarAbdelhadi/Portfolio/settings/pages',
+    source: 'https://github.com/ChougarAbdelhadi/AgenceSymfony',
     info: "Front-end : HTML5, CSS et Bootstrap. Back-End 'Framework Symfony(PHP)' : routing, Authentifaction, implémenter un CRUD, mapping Base de données et templates, validations de formulaire ... Base de données / Outil : MySQL et Git.",
     picture: './media/symfony.JPG'
   },
